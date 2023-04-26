@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    
+}
+
+.body {
+    background-color: rgb(231, 229, 229);
+}
+
+.container {
+    background-color: black;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.t-principal {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-principal {
+    color: blue;
+    font-size: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.form-inline {
+    display: flex;
+}
+
+.btn {
+    margin-inline: 1rem;
+    font-size: 20px;
+}
+
+.mi-carrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.carrito {
+    color: white;
+    font-size: 25px;
+}
+
+.carrito-cantidad {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 5px;
+}
