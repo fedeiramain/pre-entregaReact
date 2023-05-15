@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    color: white;
     
 }
 
@@ -15,24 +16,41 @@
     border-radius: 1rem;
 }
 
-.t-principal {
-    display: flex;
-    justify-content: center;
-}
-
-.titulo-principal {
-    color: blue;
-    font-size: 40px;
-}
-
 .navbar {
     display: flex;
-    justify-content: space-around;
     border-radius: 5px;
 }
 
-.form-inline {
+.menu {
     display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu-item a {
+    text-decoration: none;
+    font-size: 25px;
+    border: solid gray 2px;
+    border-radius: 1rem;
+    margin-top: 20px;
+    padding: 0.5rem;
+    color: white;
+}
+
+.menu-item a:hover {
+    background-color: white;
+    color: black;
+}
+
+.img-logo {
+    width: 100px;
+}
+
+.form-inline {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn {
@@ -43,10 +61,6 @@
 .mi-carrito {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 1rem;
-    gap: 1rem;
 }
 
 .carrito {
@@ -58,6 +72,69 @@
     background-color: green;
     color: white;
     font-size: 20px;
-    padding: 2px;
     border-radius: 5px;
+}
+
+.listado {
+    margin: 5px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    border: solid red 2px;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.listado-detalle {
+    margin: 5px;
+    padding: 1rem;
+    display: flex;
+    border: solid red 2px;
+    border-radius: 5px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    border: solid yellow 2px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.item-detalle {
+    display: flex;
+    border: solid yellow 2px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.detalle {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.img-prod {
+    max-width: 100%;
+}
+
+.img-detalle {
+    max-width: 30%;
+}
+
+.boton-info {
+    width: 30%;
+    border: none;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+}
+
+h5 {
+    color: red;
 }
