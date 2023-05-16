@@ -31,7 +31,6 @@ const ItemListContainer = () => {
             <h3>{item.nombre}</h3>
             <p>${item.precio}</p>
             <div>
-            <button className="boton-info">Añadir</button>
             <Link to={`/item/${item.id}`}><button className="boton-info">Info</button></Link>
             </div>
           </div>

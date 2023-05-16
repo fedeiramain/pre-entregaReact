@@ -4,7 +4,7 @@ import CartWidget from "../CartWidget/CartWidget";
 const NavBar = () => {
     return (
         <nav className="navbar">
-            <img src="../img/logo.jpg" className="img-logo" alt="logo" />
+            <Link to="/"><img src="../img/logo.jpg" className="img-logo" alt="logo" /></Link>
             <ul className="menu">
                 <li className="menu-item"><Link to="/">Todos</Link></li>
                 <li className="menu-item"><Link to="/iphone">Iphone</Link></li>
