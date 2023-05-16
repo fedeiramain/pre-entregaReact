@@ -7,14 +7,11 @@ import { useParams } from "react-router-dom";
 const ItemDetailContainer = () => {
 
     const [item, setItem] = useState(null);
-    const id = useParams().id;
-    console.log(item);
+    const idItem = useParams().id;
 
     useEffect(() => {
-        setTimeout(() => {
-          traerItem(Number(id))
+          traerItem(Number(idItem))
             .then(res => setItem(res))
-        }, 300);
     })
   return (
     <div>
