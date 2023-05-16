@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom";
-import { traerProductos } from "../traer";
+import { traerProductos } from "../../datos/traerDatos";
 
 
 const ItemListContainer = () => {
