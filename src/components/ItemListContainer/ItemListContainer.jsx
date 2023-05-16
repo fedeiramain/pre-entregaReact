@@ -32,7 +32,7 @@ const ItemListContainer = () => {
             <p>${item.precio}</p>
             <div>
             <button className="boton-info">Añadir</button>
-            <button className="boton-info"><Link to={`/item/${item.id}`}>Info</Link></button>
+            <Link to={`/item/${item.id}`}><button className="boton-info">Info</button></Link>
             </div>
           </div>
         )

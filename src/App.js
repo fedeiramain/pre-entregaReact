@@ -2,6 +2,7 @@ import NavBar from "./components/Navbar/NavBar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemListContainer/ItemDetailContainer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
 
 
         </Routes>
+
+        <Footer />
 
         </BrowserRouter>
       </div>

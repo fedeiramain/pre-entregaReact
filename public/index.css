@@ -14,6 +14,7 @@
     background-color: black;
     margin-top: 1rem;
     border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 .navbar {
@@ -58,21 +59,25 @@
     font-size: 20px;
 }
 
+.carrito {
+    display: flex;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-inline: 5px;
+    border: solid 3px gray;
+    border-radius: 10px;
+}
+
+.carrito:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
 .mi-carrito {
     display: flex;
-    flex-direction: row;
-}
-
-.carrito {
+    gap: 5px;
     color: white;
-    font-size: 25px;
-}
-
-.carrito-cantidad {
-    background-color: green;
-    color: white;
-    font-size: 20px;
-    border-radius: 5px;
+    text-decoration: none;
 }
 
 .listado {
@@ -135,6 +140,17 @@
     color: white;
 }
 
+.boton-info:hover {
+    background-color: white;
+    color: blue;
+}
+
 h5 {
     color: red;
+}
+
+.titulo-footer {
+    color: blue;
+    font-size: 20px;
+    padding: 1rem;
 }
