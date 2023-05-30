@@ -1,25 +1,37 @@
 import { useState } from "react";
 import ItemCount from "./ItemCount";
+import { useContext } from "react";
+import { CartContext } from "../Context/CartContext";
 
-
-const ItemDetal = ( {item} ) => {
-  
+const ItemDetal = ({ item }) => {
   const [cantidad, setCantidad] = useState(0);
+  const { cart, setCart } = useContext(CartContext);
+
   const aumentar = () => {
-      if(cantidad < 5) {
-          setCantidad(cantidad+1)
-      }
+    if (cantidad < 5) {
+      setCantidad(cantidad + 1)
+    }
   };
 
   const disminuir = () => {
-      if (cantidad > 0) {
-          setCantidad(cantidad-1)
-      };
+    if (cantidad > 0) {
+      setCantidad(cantidad - 1)
+    };
   }
 
   const agregar = () => {
-    console.log({...item, cantidad})
-  }
+    const agregado = { ...item, cantidad };
+    const carrito = [...cart];
+    const estaCarrito = carrito.find((producto) => producto.id === agregado.id);
+    if (estaCarrito) {
+      estaCarrito.cantidad += cantidad;
+    } else {
+      carrito.push(agregado);
+    }
+    setCart(carrito)
+    console.log(cart);
+  };
+
 
   return (
     

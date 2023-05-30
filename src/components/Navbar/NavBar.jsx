@@ -12,7 +12,7 @@ const NavBar = () => {
                 <li className="menu-item"><Link to="/macbook">Macbook</Link></li>
                 <li className="menu-item"><Link to="/accesorios">Accesorios</Link></li>
             </ul>
-            <p className="carrito">{<CartWidget />}</p>
+            <CartWidget />
         </nav>
     )
 };

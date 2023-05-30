@@ -63,7 +63,6 @@
 
 .carrito {
     display: flex;
-    text-decoration: none;
     padding-top: 10px;
     padding-inline: 5px;
     border: solid 3px gray;
@@ -71,7 +70,7 @@
 }
 
 .carrito:hover {
-    background-color: green;
+    background-color: blue;
     cursor: pointer;
 }
 
@@ -79,10 +78,14 @@
     display: flex;
     gap: 5px;
     color: white;
-    text-decoration: none;
 }
 
 /* Listado */
+
+.titulo-principal {
+    color: blue;
+    text-transform: uppercase;
+}
 
 .listado {
     margin: 5px;
@@ -217,4 +220,50 @@ h5 {
 .agregar-prod:hover {
     background-color: white;
     color: gray;
+}
+
+/* Carrito */
+
+.productos-carrito {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.prod-carrito {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: solid blue 2px;
+    border-radius: 1rem;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: gray;
+    color: black;
+}
+
+.btn-eliminar {
+    background-color: transparent;
+    border: solid white 2px;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* Login */
+
+.input-usuario {
+    background-color: white;
+    color: black;
+}
+
+/* Carrito */
+
+.fa-cart-shopping {
+    font-size: 30px;
+}
+
+.cantidad-carrito {
+    font-size: 30px;
 }

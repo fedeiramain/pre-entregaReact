@@ -23,7 +23,9 @@ const ItemListContainer = () => {
       
     
     return (
-        <div className="listado">
+        <div>
+          <h1 className="titulo-principal text-center">{categoria ? categoria : "Todos los Productos"}</h1>
+          <div className="listado">
          {productos && productos.map((item) => {
         return (
           <div key={item.id} className="item">
@@ -36,6 +38,7 @@ const ItemListContainer = () => {
           </div>
         )
       })}
+        </div>
         </div>
     )
 }
